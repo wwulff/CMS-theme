@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fafaf5;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  background-color: #edebdd;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2em 10%;
+}
+
+.top_nav > li,
+a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  color: black;
+  text-decoration: none;
+  padding: 1em;
+}
+
+.top_nav > li:hover {
+  color: black;
+}
+
+.nav_logo {
+  max-width: 10vw;
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 4em;
+  text-align: center;
+}
+
+.image_container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.image_box {
+  padding: 0.5vw;
+  max-width: 24vw;
+}
+
+img {
+  max-width: 100%;
+}
+
+.slider_img:hover {
+  opacity: 0.5;
+  transition: 0.7s;
+}
+
+.image_title {
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+}
+
+.post_highlight {
+  background-color: white;
+  max-width: 100%;
+  padding: 3em;
+}
+
+.title_two {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.5em;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  margin-top: 0.2;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.deepdive_article_box {
+  display: flex;
+}
+
+.large_img_box {
+  max-width: 70vw;
+}
+
+.large_img {
+}
+
+.article_content {
+  overflow: hidden;
+  padding-left: 0.5em;
+}
+
+h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3em;
+  margin-bottom: 0;
+}
+
+h5 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+}
+
+footer {
+  background-color: #dbd8c3;
+}
+
+.bottom_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
