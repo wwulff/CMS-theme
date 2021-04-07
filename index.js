@@ -26,6 +26,9 @@ function showPosts(posts) {
     //adjust stuff
     copy.querySelector("h2").textContent = post.title;
     copy.querySelector("h3 span").textContent = post.username;
+    copy.querySelector(
+      "a.expand_comment"
+    ).href = `subpage.html?article=${post._id}`;
 
     //append it
     document.querySelector("main").appendChild(copy);
