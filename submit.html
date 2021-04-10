@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="top_nav">
+          <div class="nav_logo">
+            <a href="submit.html">
+              <button class="frontpage_button">CREATE POST</button></a
+            >
+          </div>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="index.html">DESTINATION</a></li>
+          <li><a href="index.html">PROFILE</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <p class="hidden">
+      Thank you for your submission, it will be reviewed and assessed shortly.
+    </p>
+    <h1 class="submit_title">Create a post</h1>
+    <form class="submit_post">
+      <label for="post_title">Title</label>
+      <input type="text" name="title" required id="post_title" value="" />
+
+      <label for="post_username">Username</label>
+      <input type="text" name="username" required id="post_username" />
+
+      <label for="post_content">Content</label>
+      <textarea name="content" id="post_content" required></textarea>
+
+      <input type="submit" id="submit_button" value="Submit post" />
+    </form>
+
+    <script src="submit.js"></script>
+  </body>
+</html>

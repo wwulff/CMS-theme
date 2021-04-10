@@ -10,6 +10,15 @@ body {
   padding: 0;
 }
 
+.frontpage_button {
+  width: 10rem;
+  height: 4em;
+  border-radius: 50px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 0.9em;
+}
+
 ul {
   background-color: #edebdd;
   margin: 0;
@@ -113,9 +122,6 @@ main {
   max-width: 70vw;
 }
 
-.large_img {
-}
-
 .article_content {
   overflow: hidden;
   padding-left: 0.5em;
@@ -140,4 +146,117 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+}
+
+/*subpage styling*/
+
+.full_post {
+  padding: 2em;
+  border-bottom: 2px solid lightgray;
+  background-color: white;
+}
+
+.full_post > h2 {
+  font-size: 0.9em;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+}
+
+.full_post > h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+  margin-bottom: 0;
+}
+
+.country {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.4em;
+}
+
+.body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  max-width: 60em;
+}
+
+/*submit post page*/
+
+.hidden {
+  display: none;
+}
+
+.submit_title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3em;
+  text-align: center;
+}
+
+.submit_post {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 0.5em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  width: 90em;
+}
+
+#post_title {
+  width: 20em;
+}
+
+#post_username {
+  width: 20em;
+}
+
+#post_content {
+  height: 20em;
+  width: 40em;
+}
+
+#submit_button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 0.9em;
+  width: 10em;
+  height: 4em;
+  margin-bottom: 4em;
+  border-radius: 50px;
+}
+
+/* subpage.html */
+
+.comments {
+  font-size: 2em;
+  padding: 1em;
+  margin: 0;
+  opacity: 0.7;
+}
+
+.comment_section {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9em;
+  max-width: 50em;
+}
+
+.panel {
+  list-style: none;
+  border-bottom: 1px solid lightgray;
+  padding-left: 1em;
+  line-height: 1.2;
+  background-color: white;
+}
+
+.e-mail {
+  font-weight: 700;
+}
+
+.user_name {
+  font-style: italic;
+  margin-top: 0;
 }

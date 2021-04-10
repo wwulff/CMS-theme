@@ -12,18 +12,47 @@
       <nav>
         <ul class="top_nav">
           <div class="nav_logo">
-            <img src="logo/turtle-3297539_1920.png" alt="logo thing" />
+           <a href="submit.html"> <button class="frontpage_button">CREATE POST</button></a>
           </div>
           <li><a href="index.html">HOME</a></li>
           <li><a href="index.html">DESTINATION</a></li>
           <li><a href="index.html">PROFILE</a></li>
         </ul>
       </nav>
-    </header>
-    <h1></h1>
-    <h2>by <span></span></h2>
-    <p class="date"></p>
-    <p class="body"></p>
+      </header>
+    <section class="full_post">
+      <h1></h1>
+      <h2>by <span></span></h2>
+      <p class="date"></p>
+      <p class="country">Location: <span></span></p>
+      <p class="body"></p>
+    </section>
+
+    <h2 class="comments">Comments</h2>
+    <section class="comment_section">
+    <template class="commentTemplate">
+      <li class="panel">
+        <p class="e-mail">testuser123@nu.com</p>
+        <p class="user_comment">Great post</h3>
+        <p class="user_name">by Charlotte</p>
+      </li>
+    </template>
+    <ol class="commentList"></ol>
+    </section>
+
+    <form id="commentForm">
+      <label for="comment_username">Username</label>
+      <input type="text" required name="username" id="comment_username">
+
+      <label for="comment_email">E-mail</label>
+      <input placeholder="email@email.com" type="email" required name="email" id="comment_email">
+
+      <label for="comment_content">Your Comment</label>
+      <textarea placeholder="write what's on your mind!" required name="com_content" id="comment_content"></textarea>
+
+      <input type="submit" value="Post comment"/>
+    </form>
+
     <script src="article.js"></script>
   </body>
 </html>
