@@ -26,7 +26,6 @@ function showPost(data) {
   document.querySelector("h1").textContent = data.title;
   document.querySelector("h2 span").textContent = data.username;
   document.querySelector("p.body").textContent = data.content;
-  document.querySelector("p.country span").textContent = data.country;
 
   const template = document.querySelector(".commentTemplate").content;
 

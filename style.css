@@ -50,6 +50,17 @@ a {
   color: black;
 }
 
+@media (max-width: 800px) {
+  .frontpage_button {
+    width: 9em;
+    font-size: 0.8em;
+  }
+
+  ul {
+    column-gap: -1em;
+  }
+}
+
 .title {
   font-family: "Montserrat", sans-serif;
   font-size: 4em;
@@ -242,12 +253,6 @@ footer {
   margin-bottom: 0;
 }
 
-.country {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  font-size: 1.4em;
-}
-
 .body {
   font-family: "Montserrat", sans-serif;
   line-height: 1.5;
@@ -295,9 +300,24 @@ footer {
   font-weight: 600;
   font-size: 0.9em;
   width: 10em;
-  height: 4em;
+  height: 3em;
   margin-bottom: 4em;
   border-radius: 50px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+@media (max-width: 800px) {
+  .submit_post {
+    justify-content: left;
+    align-items: flex-start;
+    width: 30em;
+    margin-left: 1em;
+  }
+
+  #post_content {
+    width: 24em;
+  }
 }
 
 /* subpage.html */
@@ -316,6 +336,17 @@ footer {
   font-family: "Montserrat", sans-serif;
   font-size: 0.9em;
   max-width: 50em;
+}
+
+@media (max-width: 800px) {
+  .comments {
+    padding: 0.5em;
+  }
+
+  .comment_section {
+    padding-left: 0em;
+    max-width: 30em;
+  }
 }
 
 .panel {
@@ -373,4 +404,11 @@ footer {
   align-self: center;
   height: 2.4em;
   width: 12em;
+}
+
+@media (max-width: 800px) {
+  #commentForm {
+    margin-left: 2em;
+    max-width: 23em;
+  }
 }
