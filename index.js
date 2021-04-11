@@ -21,16 +21,16 @@ function showPosts(posts) {
   const template = document.querySelector("template.frontpage").content;
 
   posts.forEach((post) => {
-    //clone it
+    //clone
     const copy = template.cloneNode(true);
-    //adjust stuff
+    //adjust and change as I like
     copy.querySelector("h2").textContent = post.title;
     copy.querySelector("h3 span").textContent = post.username;
     copy.querySelector(
       "a.expand_comment"
     ).href = `subpage.html?article=${post._id}`;
 
-    //append it
+    //append
     document.querySelector("main").appendChild(copy);
   });
 }

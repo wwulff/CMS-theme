@@ -9,10 +9,10 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="top_header">
         <ul class="top_nav">
-          <div class="nav_logo">
-           <a href="submit.html"> <button class="frontpage_button">CREATE POST</button></a>
+          <div class="header-img">
+          <a href="submit.html"> <button class="frontpage_button">CREATE POST</button></a>
           </div>
           <li><a href="index.html">HOME</a></li>
           <li><a href="index.html">DESTINATION</a></li>
@@ -40,18 +40,44 @@
     <ol class="commentList"></ol>
     </section>
 
+    <section class="comment_submission">
+    <h3 class="create_comment">Write comment</h3>
     <form id="commentForm">
       <label for="comment_username">Username</label>
-      <input type="text" required name="username" id="comment_username">
+      <input placeholder="ex: John Doe" type="text" required name="username" id="comment_username">
 
       <label for="comment_email">E-mail</label>
-      <input placeholder="email@email.com" type="email" required name="email" id="comment_email">
+      <input placeholder="ex: email@email.com" type="email" required name="email" id="comment_email">
 
       <label for="comment_content">Your Comment</label>
       <textarea placeholder="write what's on your mind!" required name="com_content" id="comment_content"></textarea>
 
-      <input type="submit" value="Post comment"/>
+      <input type="submit" id="make_comment" value="Post comment"/>
     </form>
+    </section>
+
+    <footer>
+      <section class="bottom_content">
+        <div class="permalink_list">
+          <h5 class="permalink_title">Shortcuts</h2>
+          <li><a href="url">News</a></li>
+          <li><a href="url">Search by country</a></li>
+          <li><a href="url">Press</a></li>
+          <li><a href="url">Careers</a></li>
+        </div>
+
+        <div class="contact_us_form">
+          <h4 class="footer_contact_title">Get in Touch</h4>
+          <form class="footer_form">
+            <label for="visitor_name">Name</label>
+            <input type="text" id="visitor_name"/>
+            <label for="">Email</label>
+            <input type="email" id="visitor_email"/>
+            <input type="submit" id="send_form" value="Send request"/>
+          </form>
+        </div>
+      </section>
+    </footer>
 
     <script src="article.js"></script>
   </body>

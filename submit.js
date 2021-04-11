@@ -14,6 +14,7 @@ function userSubmission(evt) {
     content: form.elements.content.value,
   };
   document.querySelector("input[type=submit]").disabled = true;
+
   fetch("https://kea2021-8b3d.restdb.io/rest/posts", {
     method: "POST",
     headers: {

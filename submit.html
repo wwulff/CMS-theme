@@ -10,19 +10,17 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="top_header">
         <ul class="top_nav">
-          <div class="nav_logo">
-            <a href="submit.html">
-              <button class="frontpage_button">CREATE POST</button></a
-            >
+          <div class="header-img">
+          <a href="submit.html"> <button class="frontpage_button">CREATE POST</button></a>
           </div>
           <li><a href="index.html">HOME</a></li>
           <li><a href="index.html">DESTINATION</a></li>
           <li><a href="index.html">PROFILE</a></li>
         </ul>
       </nav>
-    </header>
+      </header>
 
     <p class="hidden">
       Thank you for your submission, it will be reviewed and assessed shortly.
@@ -40,6 +38,29 @@
 
       <input type="submit" id="submit_button" value="Submit post" />
     </form>
+
+    <footer>
+      <section class="bottom_content">
+        <div class="permalink_list">
+          <h5 class="permalink_title">Shortcuts</h2>
+          <li><a href="url">News</a></li>
+          <li><a href="url">Search by country</a></li>
+          <li><a href="url">Press</a></li>
+          <li><a href="url">Careers</a></li>
+        </div>
+
+        <div class="contact_us_form">
+          <h4 class="footer_contact_title">Get in Touch</h4>
+          <form class="footer_form">
+            <label for="visitor_name">Name</label>
+            <input type="text" id="visitor_name"/>
+            <label for="">Email</label>
+            <input type="email" id="visitor_email"/>
+            <input type="submit" id="send_form" value="Send request"/>
+          </form>
+        </div>
+      </section>
+    </footer>
 
     <script src="submit.js"></script>
   </body>
